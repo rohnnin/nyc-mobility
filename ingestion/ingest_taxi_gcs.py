@@ -21,7 +21,7 @@ if blob.exists():
 else:
     print("Downloading...")
     response = requests.get(url)
-    
+
     with open(file_name, "wb") as f:
         f.write(response.content)
 
